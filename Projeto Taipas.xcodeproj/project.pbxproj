@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCF4213086510052AE21 /* AppDelegate.swift */; };
+		153CDCF7213086510052AE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCF6213086510052AE21 /* ViewController.swift */; };
+		153CDCFA213086510052AE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CDCF8213086510052AE21 /* Main.storyboard */; };
+		153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCFB213086510052AE21 /* Projeto_Taipas.xcdatamodeld */; };
+		153CDCFF213086520052AE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153CDCFE213086520052AE21 /* Assets.xcassets */; };
+		153CDD02213086520052AE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CDD00213086520052AE21 /* LaunchScreen.storyboard */; };
+		E8B6095045A5D3B01AAE386F /* Pods_Projeto_Taipas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		153CDCF1213086510052AE21 /* Projeto Taipas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto Taipas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		153CDCF4213086510052AE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		153CDCF6213086510052AE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		153CDCF9213086510052AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		153CDCFC213086510052AE21 /* Projeto_Taipas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Projeto_Taipas.xcdatamodel; sourceTree = "<group>"; };
+		153CDCFE213086520052AE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		153CDD01213086520052AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		153CDD03213086520052AE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758F93A8C24A1F91ACEC1D1B /* Pods-Projeto Taipas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.debug.xcconfig"; sourceTree = "<group>"; };
+		D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projeto_Taipas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49C27805D6CA3666925DE27 /* Pods-Projeto Taipas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153CDCEE213086510052AE21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B6095045A5D3B01AAE386F /* Pods_Projeto_Taipas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153CDCE8213086510052AE21 = {
+			isa = PBXGroup;
+			children = (
+				153CDCF3213086510052AE21 /* Projeto Taipas */,
+				153CDCF2213086510052AE21 /* Products */,
+				EB8DDC25B800F7E2100A5B1C /* Pods */,
+				29F3440771C7394F3C3C94AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		153CDCF2213086510052AE21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				153CDCF1213086510052AE21 /* Projeto Taipas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153CDCF3213086510052AE21 /* Projeto Taipas */ = {
+			isa = PBXGroup;
+			children = (
+				153CDCF4213086510052AE21 /* AppDelegate.swift */,
+				153CDCF6213086510052AE21 /* ViewController.swift */,
+				153CDCF8213086510052AE21 /* Main.storyboard */,
+				153CDCFE213086520052AE21 /* Assets.xcassets */,
+				153CDD00213086520052AE21 /* LaunchScreen.storyboard */,
+				153CDD03213086520052AE21 /* Info.plist */,
+				153CDCFB213086510052AE21 /* Projeto_Taipas.xcdatamodeld */,
+			);
+			path = "Projeto Taipas";
+			sourceTree = "<group>";
+		};
+		29F3440771C7394F3C3C94AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB8DDC25B800F7E2100A5B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				758F93A8C24A1F91ACEC1D1B /* Pods-Projeto Taipas.debug.xcconfig */,
+				F49C27805D6CA3666925DE27 /* Pods-Projeto Taipas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		153CDCF0213086510052AE21 /* Projeto Taipas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153CDD06213086520052AE21 /* Build configuration list for PBXNativeTarget "Projeto Taipas" */;
+			buildPhases = (
+				114CF05B53ABAE827575DE3D /* [CP] Check Pods Manifest.lock */,
+				153CDCED213086510052AE21 /* Sources */,
+				153CDCEE213086510052AE21 /* Frameworks */,
+				153CDCEF213086510052AE21 /* Resources */,
+				AA8DBE8ECCE81ACF1809A39C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Projeto Taipas";
+			productName = "Projeto Taipas";
+			productReference = 153CDCF1213086510052AE21 /* Projeto Taipas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		153CDCE9213086510052AE21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Bruno Rocca";
+				TargetAttributes = {
+					153CDCF0213086510052AE21 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 153CDCEC213086510052AE21 /* Build configuration list for PBXProject "Projeto Taipas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 153CDCE8213086510052AE21;
+			productRefGroup = 153CDCF2213086510052AE21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153CDCF0213086510052AE21 /* Projeto Taipas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153CDCEF213086510052AE21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153CDD02213086520052AE21 /* LaunchScreen.storyboard in Resources */,
+				153CDCFF213086520052AE21 /* Assets.xcassets in Resources */,
+				153CDCFA213086510052AE21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		114CF05B53ABAE827575DE3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Projeto Taipas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA8DBE8ECCE81ACF1809A39C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153CDCED213086510052AE21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153CDCF7213086510052AE21 /* ViewController.swift in Sources */,
+				153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */,
+				153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		153CDCF8213086510052AE21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153CDCF9213086510052AE21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		153CDD00213086520052AE21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153CDD01213086520052AE21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		153CDD04213086520052AE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		153CDD05213086520052AE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		153CDD07213086520052AE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758F93A8C24A1F91ACEC1D1B /* Pods-Projeto Taipas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KA4J2KCXX;
+				INFOPLIST_FILE = "Projeto Taipas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bruno-Rocca.Projeto-Taipas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		153CDD08213086520052AE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49C27805D6CA3666925DE27 /* Pods-Projeto Taipas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KA4J2KCXX;
+				INFOPLIST_FILE = "Projeto Taipas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bruno-Rocca.Projeto-Taipas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		153CDCEC213086510052AE21 /* Build configuration list for PBXProject "Projeto Taipas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153CDD04213086520052AE21 /* Debug */,
+				153CDD05213086520052AE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153CDD06213086520052AE21 /* Build configuration list for PBXNativeTarget "Projeto Taipas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153CDD07213086520052AE21 /* Debug */,
+				153CDD08213086520052AE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		153CDCFB213086510052AE21 /* Projeto_Taipas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				153CDCFC213086510052AE21 /* Projeto_Taipas.xcdatamodel */,
+			);
+			currentVersion = 153CDCFC213086510052AE21 /* Projeto_Taipas.xcdatamodel */;
+			path = Projeto_Taipas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 153CDCE9213086510052AE21 /* Project object */;
+}
