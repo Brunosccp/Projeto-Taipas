@@ -7,11 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 class FavoriteTableViewController: UITableViewController {
 
+    var musicaList = [Musica]()
+    var selectedMusic: Musica?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //self.musicaList.removeAll()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let exemplo = Musica()
+        
+        exemplo.artist = "Raça Negra"
+        exemplo.musicName = "Ciúme de Você"
+        exemplo.cover = UIImage(named: "racaN")
+        exemplo.style = "Pagode"
+        exemplo.year = "1993"
+        
+        self.musicaList.append(exemplo)
+        
+        self.tableView.reloadData()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +50,50 @@ class FavoriteTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.musicaList.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "musicCell", for: indexPath) as! FavTableViewCell
+        
+        let index = indexPath.row
+        
+         // Configure the cell...
+        
+        cell.musicLabel.text = self.musicaList[index].musicName!
+        
+        cell.artistLabel.text = self.musicaList[index].artist!
+        
+        cell.coverImage.image = self.musicaList[index].cover!
+        
+       
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.selectedMusic = self.musicaList[indexPath.row]
+        performSegue(withIdentifier: "musicSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        if segue.identifier == "musicSegue"{
+            let musicVC = segue.destination as! MusicViewController
+            musicVC.music = self.selectedMusic!
+            
+            
+        }
+        // Pass the selected object to the new view controller.
+    }
+ 
 
     /*
     // Override to support conditional editing of the table view.

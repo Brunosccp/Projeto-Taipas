@@ -8,7 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MusicViewController: UIViewController {
+    
+    var music = Musica()
+
+    override func viewWillAppear(_ animated: Bool) {
+        
+        equipModelo.text = academyEquip.modelo
+        equipStatus.text = academyEquip.status
+        equipBarcode.text = academyEquip.barcode
+        setImage(modelo: academyEquip.modelo!)
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

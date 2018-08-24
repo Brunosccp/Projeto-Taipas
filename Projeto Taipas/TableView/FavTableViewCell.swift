@@ -10,6 +10,13 @@ import UIKit
 
 class FavTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var coverImage: UIImageView!
+    
+    @IBOutlet weak var artistLabel: UILabel!
+    
+    @IBOutlet weak var musicLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

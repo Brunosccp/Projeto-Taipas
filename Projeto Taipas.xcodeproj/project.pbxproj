@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCF4213086510052AE21 /* AppDelegate.swift */; };
-		153CDCF7213086510052AE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCF6213086510052AE21 /* ViewController.swift */; };
+		153CDCF7213086510052AE21 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCF6213086510052AE21 /* MusicViewController.swift */; };
 		153CDCFA213086510052AE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CDCF8213086510052AE21 /* Main.storyboard */; };
 		153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCFB213086510052AE21 /* Projeto_Taipas.xcdatamodeld */; };
 		153CDCFF213086520052AE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153CDCFE213086520052AE21 /* Assets.xcassets */; };
 		153CDD02213086520052AE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CDD00213086520052AE21 /* LaunchScreen.storyboard */; };
 		71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122681F213092FD002E4148 /* FavoriteTableViewController.swift */; };
 		7122682221309325002E4148 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682121309325002E4148 /* FavTableViewCell.swift */; };
+		7122682521309A81002E4148 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682421309A81002E4148 /* Musica.swift */; };
 		E8B6095045A5D3B01AAE386F /* Pods_Projeto_Taipas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		153CDCF1213086510052AE21 /* Projeto Taipas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto Taipas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		153CDCF4213086510052AE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		153CDCF6213086510052AE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		153CDCF6213086510052AE21 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		153CDCF9213086510052AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		153CDCFC213086510052AE21 /* Projeto_Taipas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Projeto_Taipas.xcdatamodel; sourceTree = "<group>"; };
 		153CDCFE213086520052AE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,6 +30,7 @@
 		153CDD03213086520052AE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7122681F213092FD002E4148 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		7122682121309325002E4148 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
+		7122682421309A81002E4148 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
 		758F93A8C24A1F91ACEC1D1B /* Pods-Projeto Taipas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.debug.xcconfig"; sourceTree = "<group>"; };
 		D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projeto_Taipas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49C27805D6CA3666925DE27 /* Pods-Projeto Taipas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,9 +69,10 @@
 		153CDCF3213086510052AE21 /* Projeto Taipas */ = {
 			isa = PBXGroup;
 			children = (
+				7122682321309A4E002E4148 /* Model */,
 				7122681C213092BD002E4148 /* TableView */,
 				153CDCF4213086510052AE21 /* AppDelegate.swift */,
-				153CDCF6213086510052AE21 /* ViewController.swift */,
+				153CDCF6213086510052AE21 /* MusicViewController.swift */,
 				153CDCF8213086510052AE21 /* Main.storyboard */,
 				153CDCFE213086520052AE21 /* Assets.xcassets */,
 				153CDD00213086520052AE21 /* LaunchScreen.storyboard */,
@@ -94,6 +97,14 @@
 				7122682121309325002E4148 /* FavTableViewCell.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		7122682321309A4E002E4148 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7122682421309A81002E4148 /* Musica.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EB8DDC25B800F7E2100A5B1C /* Pods */ = {
@@ -217,11 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153CDCF7213086510052AE21 /* ViewController.swift in Sources */,
+				153CDCF7213086510052AE21 /* MusicViewController.swift in Sources */,
 				71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */,
 				153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */,
 				153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */,
 				7122682221309325002E4148 /* FavTableViewCell.swift in Sources */,
+				7122682521309A81002E4148 /* Musica.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KA4J2KCXX;
+				DEVELOPMENT_TEAM = CUPVNHUL72;
 				INFOPLIST_FILE = "Projeto Taipas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,7 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KA4J2KCXX;
+				DEVELOPMENT_TEAM = CUPVNHUL72;
 				INFOPLIST_FILE = "Projeto Taipas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
