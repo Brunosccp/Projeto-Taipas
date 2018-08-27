@@ -16,6 +16,8 @@
 		71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122681F213092FD002E4148 /* FavoriteTableViewController.swift */; };
 		7122682221309325002E4148 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682121309325002E4148 /* FavTableViewCell.swift */; };
 		7122682521309A81002E4148 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682421309A81002E4148 /* Musica.swift */; };
+		7122682821347820002E4148 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682721347820002E4148 /* SearchTableViewController.swift */; };
+		7122682A213478C8002E4148 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71226829213478C8002E4148 /* SearchTableViewCell.swift */; };
 		E8B6095045A5D3B01AAE386F /* Pods_Projeto_Taipas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		7122681F213092FD002E4148 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		7122682121309325002E4148 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		7122682421309A81002E4148 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
+		7122682721347820002E4148 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		71226829213478C8002E4148 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		758F93A8C24A1F91ACEC1D1B /* Pods-Projeto Taipas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.debug.xcconfig"; sourceTree = "<group>"; };
 		D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projeto_Taipas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49C27805D6CA3666925DE27 /* Pods-Projeto Taipas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		153CDCF3213086510052AE21 /* Projeto Taipas */ = {
 			isa = PBXGroup;
 			children = (
+				71226826213475F9002E4148 /* Search */,
 				7122682321309A4E002E4148 /* Model */,
 				7122681C213092BD002E4148 /* TableView */,
 				153CDCF4213086510052AE21 /* AppDelegate.swift */,
@@ -105,6 +110,15 @@
 				7122682421309A81002E4148 /* Musica.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		71226826213475F9002E4148 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7122682721347820002E4148 /* SearchTableViewController.swift */,
+				71226829213478C8002E4148 /* SearchTableViewCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		EB8DDC25B800F7E2100A5B1C /* Pods */ = {
@@ -231,7 +245,9 @@
 				153CDCF7213086510052AE21 /* MusicViewController.swift in Sources */,
 				71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */,
 				153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */,
+				7122682821347820002E4148 /* SearchTableViewController.swift in Sources */,
 				153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */,
+				7122682A213478C8002E4148 /* SearchTableViewCell.swift in Sources */,
 				7122682221309325002E4148 /* FavTableViewCell.swift in Sources */,
 				7122682521309A81002E4148 /* Musica.swift in Sources */,
 			);

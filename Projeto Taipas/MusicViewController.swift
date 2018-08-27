@@ -14,11 +14,11 @@ class MusicViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        equipModelo.text = academyEquip.modelo
-        equipStatus.text = academyEquip.status
-        equipBarcode.text = academyEquip.barcode
-        setImage(modelo: academyEquip.modelo!)
-        
+//        equipModelo.text = academyEquip.modelo
+//        equipStatus.text = academyEquip.status
+//        equipBarcode.text = academyEquip.barcode
+//        setImage(modelo: academyEquip.modelo!)
+//        
         
     }
 

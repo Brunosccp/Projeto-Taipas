@@ -12,24 +12,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="xfg-kP-nyB">
-            <objects>
-                <viewController id="z4E-rG-ypu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3vG-NV-Hoi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gwm-W7-Dgc"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="3p4-Yl-iKu">
-                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x62-fR-mhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="461" y="-527"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bO3-jW-Fgl">
             <objects>
@@ -41,13 +23,30 @@
                         <color key="selectedImageTintColor" red="0.1647058824" green="0.72156862749999995" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="z4E-rG-ypu" kind="relationship" relationship="viewControllers" id="rUL-jc-Ewk"/>
+                        <segue destination="V8C-zQ-X55" kind="relationship" relationship="viewControllers" id="Ato-iJ-upD"/>
                         <segue destination="nZd-cI-0NP" kind="relationship" relationship="viewControllers" id="BUT-Fg-eIt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7l-c1-tDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-492" y="-195"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="m30-WP-rbB">
+            <objects>
+                <navigationController id="V8C-zQ-X55" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CDt-4T-tOl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="McG-0D-0H0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yxn-ma-AtU" kind="relationship" relationship="rootViewController" id="SOl-Cj-WCZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uh4-FW-tZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-888"/>
         </scene>
         <!--Suas Musicas-->
         <scene sceneID="uan-HG-5Zg">
@@ -58,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="musicCell" textLabel="qZr-kT-Rx1" detailTextLabel="zR7-95-F8W" style="IBUITableViewCellStyleValue2" id="75I-v5-FeN" customClass="FavTableViewCell" customModule="Projeto_Taipas" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="musicCell" textLabel="qZr-kT-Rx1" detailTextLabel="zR7-95-F8W" rowHeight="55" style="IBUITableViewCellStyleValue2" id="75I-v5-FeN" customClass="FavTableViewCell" customModule="Projeto_Taipas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="30" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="75I-v5-FeN" id="LNR-dg-oeq">
@@ -66,12 +65,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nYD-xc-KTB">
-                                            <rect key="frame" x="16" y="10" width="48" height="35"/>
+                                            <rect key="frame" x="16" y="10" width="48" height="34.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="YcZ-6L-Lio"/>
+                                                <constraint firstAttribute="width" constant="40" id="YcZ-6L-Lio"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qZr-kT-Rx1">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="70" id="qZr-kT-Rx1">
                                             <rect key="frame" x="25" y="20" width="91" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -191,6 +190,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vl-74-6UE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="498" y="286"/>
+        </scene>
+        <!--Suas Pesquisa-->
+        <scene sceneID="cOw-S5-lKZ">
+            <objects>
+                <tableViewController id="yxn-ma-AtU" customClass="SearchTableViewController" customModule="Projeto_Taipas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="26" contentViewInsetsToSafeArea="NO" id="3dr-vK-Q1l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="searchCell" textLabel="DcU-Qb-C2C" detailTextLabel="SCw-ql-NOb" style="IBUITableViewCellStyleValue2" id="3Do-4m-WQB" customClass="SearchTableViewCell" customModule="Projeto_Taipas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="30" width="375" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Do-4m-WQB" id="Y39-sZ-ACo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fam-Nu-bmT">
+                                            <rect key="frame" x="16" y="10" width="48" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48" id="N60-8t-Re6"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DcU-Qb-C2C">
+                                            <rect key="frame" x="25" y="20" width="91" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SCw-ql-NOb">
+                                            <rect key="frame" x="122" y="20" width="35" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fam-Nu-bmT" firstAttribute="top" secondItem="Y39-sZ-ACo" secondAttribute="topMargin" constant="2" id="7uB-om-tYk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fam-Nu-bmT" secondAttribute="bottom" constant="2" id="xGR-fm-ZTn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="artistLabel" destination="DcU-Qb-C2C" id="Per-g5-SVm"/>
+                                    <outlet property="coverImage" destination="fam-Nu-bmT" id="iKn-JH-dV7"/>
+                                    <outlet property="musicLabel" destination="SCw-ql-NOb" id="XPA-BN-0Q9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yxn-ma-AtU" id="g2Y-cb-Rmv"/>
+                            <outlet property="delegate" destination="yxn-ma-AtU" id="mhV-Co-oDN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Suas Pesquisa" leftItemsSupplementBackButton="YES" id="m3Z-vv-uHF"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="aGv-Oi-eLM" id="0Nv-jb-ILW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gb-Rp-zKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="aGv-Oi-eLM">
+                    <connections>
+                        <outlet property="delegate" destination="yxn-ma-AtU" id="Ksh-Ek-RE4"/>
+                        <outlet property="searchContentsController" destination="yxn-ma-AtU" id="xPS-jp-ocK"/>
+                        <outlet property="searchResultsDataSource" destination="yxn-ma-AtU" id="MRY-So-pE2"/>
+                        <outlet property="searchResultsDelegate" destination="yxn-ma-AtU" id="8ZD-LQ-2RD"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1377" y="-888"/>
         </scene>
     </scenes>
     <resources>
