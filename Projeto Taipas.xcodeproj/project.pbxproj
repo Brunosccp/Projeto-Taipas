@@ -13,6 +13,7 @@
 		153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 153CDCFB213086510052AE21 /* Projeto_Taipas.xcdatamodeld */; };
 		153CDCFF213086520052AE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153CDCFE213086520052AE21 /* Assets.xcassets */; };
 		153CDD02213086520052AE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CDD00213086520052AE21 /* LaunchScreen.storyboard */; };
+		15E17AE521347D35008D78D9 /* APISpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E17AE421347D35008D78D9 /* APISpotify.swift */; };
 		71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122681F213092FD002E4148 /* FavoriteTableViewController.swift */; };
 		7122682221309325002E4148 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682121309325002E4148 /* FavTableViewCell.swift */; };
 		7122682521309A81002E4148 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682421309A81002E4148 /* Musica.swift */; };
@@ -30,6 +31,7 @@
 		153CDCFE213086520052AE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		153CDD01213086520052AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		153CDD03213086520052AE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E17AE421347D35008D78D9 /* APISpotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISpotify.swift; sourceTree = "<group>"; };
 		7122681F213092FD002E4148 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		7122682121309325002E4148 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		7122682421309A81002E4148 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
@@ -76,8 +78,9 @@
 				71226826213475F9002E4148 /* Search */,
 				7122682321309A4E002E4148 /* Model */,
 				7122681C213092BD002E4148 /* TableView */,
-				153CDCF4213086510052AE21 /* AppDelegate.swift */,
+				15E17AE621347D96008D78D9 /* API */,
 				153CDCF6213086510052AE21 /* MusicViewController.swift */,
+				153CDCF4213086510052AE21 /* AppDelegate.swift */,
 				153CDCF8213086510052AE21 /* Main.storyboard */,
 				153CDCFE213086520052AE21 /* Assets.xcassets */,
 				153CDD00213086520052AE21 /* LaunchScreen.storyboard */,
@@ -85,6 +88,14 @@
 				153CDCFB213086510052AE21 /* Projeto_Taipas.xcdatamodeld */,
 			);
 			path = "Projeto Taipas";
+			sourceTree = "<group>";
+		};
+		15E17AE621347D96008D78D9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				15E17AE421347D35008D78D9 /* APISpotify.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		29F3440771C7394F3C3C94AE /* Frameworks */ = {
@@ -225,12 +236,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -248,6 +257,7 @@
 				71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */,
 				153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */,
 				7122682821347820002E4148 /* SearchTableViewController.swift in Sources */,
+				15E17AE521347D35008D78D9 /* APISpotify.swift in Sources */,
 				153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */,
 				7122682A213478C8002E4148 /* SearchTableViewCell.swift in Sources */,
 				7122682221309325002E4148 /* FavTableViewCell.swift in Sources */,
@@ -403,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.projetoTaipas;
+				PRODUCT_BUNDLE_IDENTIFIER = "Bruno-Rocca.Projeto-Taipas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,7 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.projetoTaipas;
+				PRODUCT_BUNDLE_IDENTIFIER = "Bruno-Rocca.Projeto-Taipas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
