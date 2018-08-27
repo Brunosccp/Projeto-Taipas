@@ -37,20 +37,21 @@ class APISpotify{
             })
         
     }
-    func getURL(artist: String, type: String, limit: Int, offset: Int){
-        var artistDecoded = ""
-        for char in artist{
+    //type can be "track" or "artist", limit is how many musics the spotify will show, offset idks
+    func getURL(search: String, type: String, limit: Int, offset: Int){
+        var searchDecoded = ""
+        for char in search{
             if (char != " "){
-                artistDecoded.append(char)
+                searchDecoded.append(char)
             }
             else{
-                artistDecoded += "%20"
+                searchDecoded += "%20"
             }
             //print("char: ",char)
         }
-        print(artistDecoded)
+        print(searchDecoded)
         
-        let URL = "https://api.spotify.com/v1/search?q=" + artistDecoded + "&type=" + type + "&market=BR" + "&limit=\(limit)" + "&offset=\(offset)"
+        let URL = "https://api.spotify.com/v1/search?q=" + searchDecoded + "&type=" + type + "&market=BR" + "&limit=\(limit)" + "&offset=\(offset)"
         
         
         print(URL)
