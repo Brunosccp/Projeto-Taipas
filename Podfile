@@ -8,5 +8,6 @@ target 'Projeto Taipas' do
   # Pods for Jardim Irene Mananger
 
 pod ‘Alamofire’
+pod ‘SwiftyJSON’
 
 end
