@@ -14,6 +14,7 @@
 		153CDCFF213086520052AE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153CDCFE213086520052AE21 /* Assets.xcassets */; };
 		153CDD02213086520052AE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CDD00213086520052AE21 /* LaunchScreen.storyboard */; };
 		15E17AE521347D35008D78D9 /* APISpotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E17AE421347D35008D78D9 /* APISpotify.swift */; };
+		15E17AFB21350E64008D78D9 /* MusicCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E17AFA21350E64008D78D9 /* MusicCoreData.swift */; };
 		71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122681F213092FD002E4148 /* FavoriteTableViewController.swift */; };
 		7122682221309325002E4148 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682121309325002E4148 /* FavTableViewCell.swift */; };
 		7122682521309A81002E4148 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682421309A81002E4148 /* Musica.swift */; };
@@ -32,6 +33,7 @@
 		153CDD01213086520052AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		153CDD03213086520052AE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E17AE421347D35008D78D9 /* APISpotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISpotify.swift; sourceTree = "<group>"; };
+		15E17AFA21350E64008D78D9 /* MusicCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoreData.swift; sourceTree = "<group>"; };
 		7122681F213092FD002E4148 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		7122682121309325002E4148 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		7122682421309A81002E4148 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				7122682321309A4E002E4148 /* Model */,
 				7122681C213092BD002E4148 /* TableView */,
 				15E17AE621347D96008D78D9 /* API */,
+				15E17AFC21351722008D78D9 /* CoreData */,
 				153CDCF6213086510052AE21 /* MusicViewController.swift */,
 				153CDCF4213086510052AE21 /* AppDelegate.swift */,
 				153CDCF8213086510052AE21 /* Main.storyboard */,
@@ -96,6 +99,14 @@
 				15E17AE421347D35008D78D9 /* APISpotify.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		15E17AFC21351722008D78D9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				15E17AFA21350E64008D78D9 /* MusicCoreData.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		29F3440771C7394F3C3C94AE /* Frameworks */ = {
@@ -257,6 +268,7 @@
 			files = (
 				153CDCF7213086510052AE21 /* MusicViewController.swift in Sources */,
 				71226820213092FD002E4148 /* FavoriteTableViewController.swift in Sources */,
+				15E17AFB21350E64008D78D9 /* MusicCoreData.swift in Sources */,
 				153CDCF5213086510052AE21 /* AppDelegate.swift in Sources */,
 				7122682821347820002E4148 /* SearchTableViewController.swift in Sources */,
 				15E17AE521347D35008D78D9 /* APISpotify.swift in Sources */,
