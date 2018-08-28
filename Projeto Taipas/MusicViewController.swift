@@ -9,19 +9,31 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import WebKit
 
-class MusicViewController: UIViewController {
+class MusicViewController: UIViewController, WKNavigationDelegate {
     
-    var music = Musica()
+    @IBOutlet weak var webCover: WKWebView!
+    
+    @IBOutlet weak var music: UILabel!
+    @IBOutlet weak var artist: UILabel!
+    
+    @IBOutlet weak var year: UILabel!
+    
+    var song = Musica()
+    
+    override func loadView() {
+        //let webConfiguration = WKWebViewConfiguration()
+        webCover = WKWebView()
+        webCover.navigationDelegate = self
+        view = webCover
+    }
 
     override func viewWillAppear(_ animated: Bool) {
-        
-//        equipModelo.text = academyEquip.modelo
-//        equipStatus.text = academyEquip.status
-//        equipBarcode.text = academyEquip.barcode
-//        setImage(modelo: academyEquip.modelo!)
-//        
-        
+
+//        artist.text = song.artist
+//        year.text = song.year
+//        music.text = song.musicName
     }
 
     let group = DispatchGroup()
@@ -29,7 +41,10 @@ class MusicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let myURL = URL(string: "https://i.scdn.co/image/fd6fbb74ff13e324092ba77fd56fcc7e20551b84")
+        let myRequest = URLRequest(url: myURL!)
+        webCover.load(myRequest)
+        webCover.allowsBackForwardNavigationGestures = true
         
         let apiSpotify = APISpotify()
         
@@ -63,5 +78,6 @@ class MusicViewController: UIViewController {
     }
 
 
-}
+} //END MusicViewController
+
 

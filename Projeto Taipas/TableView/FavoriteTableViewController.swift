@@ -87,9 +87,8 @@ class FavoriteTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         if segue.identifier == "musicSegue"{
             let musicVC = segue.destination as! MusicViewController
-            musicVC.music = self.selectedMusic!
-            
-            
+            musicVC.song = self.selectedMusic!
+   
         }
         // Pass the selected object to the new view controller.
     }
