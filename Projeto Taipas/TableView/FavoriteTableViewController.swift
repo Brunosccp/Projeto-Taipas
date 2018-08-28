@@ -13,23 +13,27 @@ class FavoriteTableViewController: UITableViewController {
 
     var musicaList = [Musica]()
     var selectedMusic: Musica?
+    var musicData = MusicCoreData()
     
     override func viewWillAppear(_ animated: Bool) {
-        //self.musicaList.removeAll()
+        self.musicaList = musicData.getAllMusics()
+        self.tableView.reloadData()
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("chegou")
         
-        let exemplo = Musica()
+//        let exemplo = Musica()
+//
+//        exemplo.artist = "Raça Negra"
+//        exemplo.musicName = "Ciúme de Você"
+//        exemplo.cover = nil
+//        exemplo.style = "Pagode"
+//        exemplo.year = "1993"
         
-        exemplo.artist = "Raça Negra"
-        exemplo.musicName = "Ciúme de Você"
-        exemplo.cover = UIImage(named: "racaN")
-        exemplo.style = "Pagode"
-        exemplo.year = "1993"
-        
-        self.musicaList.append(exemplo)
+        self.musicaList = musicData.getAllMusics()
         
         self.tableView.reloadData()
         
@@ -70,24 +74,35 @@ class FavoriteTableViewController: UITableViewController {
         
         cell.artistLabel.text = self.musicaList[index].artist!
         
-        cell.coverImage.image = self.musicaList[index].cover!
         
        
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        self.selectedMusic = self.musicaList[indexPath.row]
-        performSegue(withIdentifier: "musicSegue", sender: self)
-        
+    //Delete
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            print(self.musicaList[indexPath.row].musicName)
+            self.musicData.removeMusic(music: self.musicaList[indexPath.row])
+            
+            viewDidLoad()
+        }
     }
     
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         if segue.identifier == "musicSegue"{
-            let musicVC = segue.destination as! MusicViewController
-            musicVC.song = self.selectedMusic!
+            guard let musicVC = segue.destination as? TwoViewController else { return }
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                musicVC.masterSong = self.musicaList[indexPath.row]
+            }
+            
+            
+            
+            
    
         }
         // Pass the selected object to the new view controller.

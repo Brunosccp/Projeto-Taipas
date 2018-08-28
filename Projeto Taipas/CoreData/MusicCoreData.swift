@@ -25,7 +25,7 @@ class MusicCoreData{
         
         newMusic.setValue(music.musicName, forKey: "musicName")
         newMusic.setValue(music.artist, forKey: "artist")
-        //newMusic.setValue(music.cover, forKey: "cover")
+        newMusic.setValue(music.cover, forKey: "cover")
         newMusic.setValue(music.year, forKey: "year")
         
         //saving new data
@@ -55,7 +55,7 @@ class MusicCoreData{
                 
                 music.musicName = musicObject.value(forKey: "musicName") as? String
                 music.artist = musicObject.value(forKey: "artist") as? String
-                //music.cover = musicObject.value(forKey: "cover") as? String
+                music.cover = musicObject.value(forKey: "cover") as? String
                 music.year = musicObject.value(forKey: "year") as? String
                 
                 musics.append(music)

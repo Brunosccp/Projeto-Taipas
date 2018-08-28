@@ -15,6 +15,6 @@ class Musica: NSObject{
     var musicName: String?
     var year: String?
     var style: String?
-    var cover: UIImage?
+    var cover: String?
     
 }

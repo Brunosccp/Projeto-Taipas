@@ -16,6 +16,7 @@ class SearchTableViewController: UITableViewController {
     var musicaList = [Musica]()
     var selectedMusic: Musica?
     var apiSpotify = APISpotify()
+    let musicData = MusicCoreData()
     var searchTxt: String!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +35,36 @@ class SearchTableViewController: UITableViewController {
         
        ApiRefresh()
 
+        let exemplo = Musica()
+        
+        exemplo.artist = "Raça Negra"
+        exemplo.musicName = "Ciúme de Você"
+        exemplo.cover = nil
+        exemplo.style = "Pagode"
+        exemplo.year = "1993"
+        
+        let exemplo2 = Musica()
+        
+        exemplo2.artist = "Skank"
+        exemplo2.musicName = "Resposta"
+        exemplo2.cover = nil
+        exemplo2.style = "Pop/Rock"
+        exemplo2.year = "2001"
+        
+        self.musicaList.append(exemplo)
+        
+        self.tableView.reloadData()
+        
+        
+        //music.addMusic(exemplo)
+        //music.addMusic(exemplo2)
+        
+        //music.removeMusic(music: exemplo2)
+        //music.removeAllMusics()
+        
+        //print(music.getAllMusics()[0].musicName)
+        print(musicData.getAllMusics().count)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -69,15 +100,8 @@ class SearchTableViewController: UITableViewController {
                     print(result["tracks"]["items"][i]["popularity"])   //popularidade da musica
                     print("wAQUI!!!!!")
                     
-                    var urlString = result["tracks"]["items"][i]["album"]["images"][0]["url"].stringValue
-                    let url = URL(fileURLWithPath: urlString)
-
-                    do {
-                        exemplo.cover = UIImage(data: try Data(contentsOf: url))
-                    }catch {
-
-                    }
-                   // exemplo.cover = UIImage(data: data)//(named: "racaN")
+                    exemplo.cover = result["tracks"]["items"][i]["album"]["images"][0]["url"].stringValue
+                    
                     print(result["tracks"]["items"][i]["album"]["images"][0]["url"])    //url da imagem do album
                     self.musicaList.append(exemplo)
                     print()
@@ -125,6 +149,7 @@ class SearchTableViewController: UITableViewController {
         let alertPrompt = UIAlertController(title: self.selectedMusic?.artist, message: (self.selectedMusic?.musicName)! + " will be in your favorite List", preferredStyle: .actionSheet)
         let confirmAction = UIAlertAction(title: "Confirmar", style: UIAlertActionStyle.default, handler: { (action) -> Void in
             
+            self.musicData.addMusic(self.selectedMusic!)
             //TODO: Set selectedMusic into CoreData
         })
         

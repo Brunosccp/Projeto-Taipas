@@ -20,6 +20,8 @@
 		7122682521309A81002E4148 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682421309A81002E4148 /* Musica.swift */; };
 		7122682821347820002E4148 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682721347820002E4148 /* SearchTableViewController.swift */; };
 		7122682A213478C8002E4148 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71226829213478C8002E4148 /* SearchTableViewCell.swift */; };
+		7122682C2135CF7D002E4148 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682B2135CF7D002E4148 /* TwoViewController.swift */; };
+		7122682E2135D021002E4148 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7122682D2135D021002E4148 /* WebViewController.swift */; };
 		E8B6095045A5D3B01AAE386F /* Pods_Projeto_Taipas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		7122682421309A81002E4148 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
 		7122682721347820002E4148 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		71226829213478C8002E4148 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		7122682B2135CF7D002E4148 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		7122682D2135D021002E4148 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		758F93A8C24A1F91ACEC1D1B /* Pods-Projeto Taipas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.debug.xcconfig"; sourceTree = "<group>"; };
 		D2CD5E7E644E2A26050D32F3 /* Pods_Projeto_Taipas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projeto_Taipas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49C27805D6CA3666925DE27 /* Pods-Projeto Taipas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Taipas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Taipas/Pods-Projeto Taipas.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				15E17AE621347D96008D78D9 /* API */,
 				15E17AFC21351722008D78D9 /* CoreData */,
 				153CDCF6213086510052AE21 /* MusicViewController.swift */,
+				7122682B2135CF7D002E4148 /* TwoViewController.swift */,
+				7122682D2135D021002E4148 /* WebViewController.swift */,
 				153CDCF4213086510052AE21 /* AppDelegate.swift */,
 				153CDCF8213086510052AE21 /* Main.storyboard */,
 				153CDCFE213086520052AE21 /* Assets.xcassets */,
@@ -273,9 +279,11 @@
 				7122682821347820002E4148 /* SearchTableViewController.swift in Sources */,
 				15E17AE521347D35008D78D9 /* APISpotify.swift in Sources */,
 				153CDCFD213086510052AE21 /* Projeto_Taipas.xcdatamodeld in Sources */,
+				7122682E2135D021002E4148 /* WebViewController.swift in Sources */,
 				7122682A213478C8002E4148 /* SearchTableViewCell.swift in Sources */,
 				7122682221309325002E4148 /* FavTableViewCell.swift in Sources */,
 				7122682521309A81002E4148 /* Musica.swift in Sources */,
+				7122682C2135CF7D002E4148 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
