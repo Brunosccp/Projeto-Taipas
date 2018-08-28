@@ -68,15 +68,32 @@ class MusicCoreData{
         return musics
     }
     
-    func removeMusic(){
-        let music = NSEntityDescription.insertNewObject(forEntityName: "Music", into: context)
+    func removeMusic(music: Musica){
+        //
+        let fetchRequest : NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "Music")
         
         //
-        context.delete(music)
+        fetchRequest.predicate = NSPredicate(format: "musicName == %@", music.musicName!)
+        
+        do{
+            let result = try context.fetch(fetchRequest)
+            //if theres more than 1 music with this name, wil
+            print("tamanho de result: ", result.count)
+            
+            for i in 0..<result.count{
+                let musicObject = result[i] as! NSManagedObject
+                context.delete(musicObject)
+            }
+            
+        }catch{
+            print("ERROR: Can't find the music to be removed")
+        }
+
+        
         do{
             try context.save()
         }catch{
-            print("ERROR: Can't delete data from music")
+            print("ERROR: Can't save the data with the removed music")
         }
     }
     func removeAllMusics(){

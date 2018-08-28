@@ -43,8 +43,11 @@ class SearchTableViewController: UITableViewController {
         let music = MusicCoreData()
         //music.addMusic(exemplo)
         //music.addMusic(exemplo2)
+        
+        //music.removeMusic(music: exemplo2)
         //music.removeAllMusics()
         
+        //print(music.getAllMusics()[0].musicName)
         print(music.getAllMusics().count)
         
         // Uncomment the following line to preserve selection between presentations
