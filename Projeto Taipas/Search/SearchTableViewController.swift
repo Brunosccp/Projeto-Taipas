@@ -28,10 +28,24 @@ class SearchTableViewController: UITableViewController {
         exemplo.style = "Pagode"
         exemplo.year = "1993"
         
+        let exemplo2 = Musica()
+        
+        exemplo2.artist = "Skank"
+        exemplo2.musicName = "Resposta"
+        exemplo2.cover = UIImage(named: "racaN")
+        exemplo2.style = "Pop/Rock"
+        exemplo2.year = "2001"
+        
         self.musicaList.append(exemplo)
         
         self.tableView.reloadData()
         
+        let music = MusicCoreData()
+        //music.addMusic(exemplo)
+        //music.addMusic(exemplo2)
+        //music.removeAllMusics()
+        
+        print(music.getAllMusics().count)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
