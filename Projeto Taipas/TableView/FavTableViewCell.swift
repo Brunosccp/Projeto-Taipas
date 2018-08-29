@@ -10,7 +10,6 @@ import UIKit
 
 class FavTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var coverImage: UIImageView!
     
     @IBOutlet weak var artistLabel: UILabel!
     

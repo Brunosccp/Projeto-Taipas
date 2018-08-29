@@ -21,38 +21,26 @@ class SearchTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         //self.musicaList.removeAll()
-        self.searchController.searchBar.delegate = self
-        self.searchController.dimsBackgroundDuringPresentation = false
-        self.searchController.hidesNavigationBarDuringPresentation = false
-        self.searchController.searchBar.placeholder = "Enter your music or artist..."
-        definesPresentationContext = true
-        tableView.tableHeaderView = searchController.searchBar
-        self.searchTxt = ""
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        defineSearchBar()
         
        ApiRefresh()
 
-        let exemplo = Musica()
-        
-        exemplo.artist = "Raça Negra"
-        exemplo.musicName = "Ciúme de Você"
-        exemplo.cover = nil
-        exemplo.style = "Pagode"
-        exemplo.year = "1993"
-        
-        let exemplo2 = Musica()
-        
-        exemplo2.artist = "Skank"
-        exemplo2.musicName = "Resposta"
-        exemplo2.cover = nil
-        exemplo2.style = "Pop/Rock"
-        exemplo2.year = "2001"
-        
-        self.musicaList.append(exemplo)
-        
+//        let exemplo = Musica()
+//        
+//        exemplo.artist = "Raça Negra"
+//        exemplo.musicName = "Ciúme de Você"
+//        exemplo.cover = nil
+//        exemplo.style = "Pagode"
+//        exemplo.year = "1993"
+//        
+//        self.musicaList.append(exemplo)
+//        
         self.tableView.reloadData()
         
         
@@ -162,7 +150,15 @@ class SearchTableViewController: UITableViewController {
         
     }
     
-    
+    func defineSearchBar()  {
+        self.searchController.searchBar.delegate = self
+        self.searchController.dimsBackgroundDuringPresentation = false
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Enter your music or artist..."
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        self.searchTxt = ""
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -213,14 +209,28 @@ class SearchTableViewController: UITableViewController {
 
 extension SearchTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        
         // MARK: -  PRA NÃO DAR PAU NUNCA
         if let searchText = searchBar.text {
             self.searchTxt = searchText
             ApiRefresh()
         }
+
     }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.text = nil
+         searchBar.text = nil
     }
+    
+//    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+//        // Dismiss the keyboard
+//        self.searchController.resignFirstResponder()
+//        
+//        // Reload of table data
+//        self.searchController.loadView()
+//    }
+    
+
 }
 

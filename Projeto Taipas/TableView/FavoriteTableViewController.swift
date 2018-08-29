@@ -83,7 +83,6 @@ class FavoriteTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
-            print(self.musicaList[indexPath.row].musicName)
             self.musicData.removeMusic(music: self.musicaList[indexPath.row])
             
             viewDidLoad()
